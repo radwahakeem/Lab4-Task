@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input:focus { 
+    outline:none;
+    border: 1px solid #4195fc;  
+}​
+    </style>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form onsubmit ="return verifyPassword()">
+  <label>Full Name:</label>
+  <input type="text" id="user_input"  value="" onclick="myfunction()">
+  <small id="err" style="color: red; display: none;">error</small>
+   <br>
+  <label>Email:</label>
+  <input type="text" id="user_input"  value=""><br><br>
+  <div class="pass">
+    <label>Password:</label>
+            <input id="pass"
+                   type="password"
+                   name="pass"
+                   placeholder="Enter Password"
+                   required"">
+                   <label>Repeat Password:</label>
+            <input id="confirm_pass"
+                   type="password"
+                   name="confirm_pass"
+                   placeholder="Confirm Password"
+                   required
+                   onkeyup="validate_password()">
+        </div>
+        <span id="wrong_pass_alert"></span>
+        <div class="buttons">
+            <button id="create"
+                    class="submit_btn"
+                    onclick="wrong_pass_alert()">
+                Submit
+            </button>
+        </div>
+  <h2>Select City</h2>
+    <select id="user_input">
+    <option value="">Luxor</option>
+    <option value="Placement">Aswan</option>
+    <option value="Java">Qena</option>
+    <option value="Python">Assuit</option>
+    <option value="C++">Cairo</option>
+</select>
+<br><br>
+<input type="checkbox" id="user_input" value="">
+  <label> I accept the terms and conditions</label><br>
+  <br><br>
+</form> 
+<span id="wrong_pass_alert"></span>
+<button type="submit" id="mySubmit" onclick="showInput();" formtarget="_blank">Register</button>
+<p><span id='display'></span></p>
+<br><br>
+
+
+
+<script src="task1.js"></script>
+</body>
+
+</html>
